@@ -13,7 +13,7 @@
 * 942bd2e Merge pull request #1525 from mikyk10/feature/adding-mime-compress
 * 2cb950f Merge pull request #1543 from dhiemaz/fixing-typos
 * aed0d1e Merge pull request #1550 from revel/bugfix/readme-install
-* bc89379 Fixed log recursive call There was a recusive loop in the logger, this fixes it closes #1542
+* bc89379 Fixed log recursive call There was a recursive loop in the logger, this fixes it closes #1542
 * aa8a94d Merge pull request #1546 from braineet/master
 * 741d2c8 Corrects install command for new version of go
 * 65db3c0 Merge pull request #1549 from revel/bugfix/session-uuid
@@ -47,9 +47,9 @@
 * 192fc66 Merge pull request #200 from julidau/develop
 * 5689f86 Merge pull request #204 from shinypb/master
 * 6dba0c3 Fix bad error syntax An wrapped error message in the cmd module was referencing the wrong parameter value to be built closes revel/revel#1532
-* bb926f3 Added additional pattern to test against Another different missing pacakge error thrown that can be detected and added This error occurs because a package may have been stripped down when originally loaded
+* bb926f3 Added additional pattern to test against Another different missing package error thrown that can be detected and added This error occurs because a package may have been stripped down when originally loaded
 * 3cd5ebb Updated launch scripts
-* 25dc05b Updated Launch code Added output to error stack, so terminal errors are displayed Ficed c.Verbose, it was changed to an array which causes issues launching Removed . notation from doing anything special. This was already replaced with the -p CLI option Added documentaiton on adding the package name Started watcher with force refresh.
+* 25dc05b Updated Launch code Added output to error stack, so terminal errors are displayed Fixed c.Verbose, it was changed to an array which causes issues launching Removed . notation from doing anything special. This was already replaced with the -p CLI option Added documentation on adding the package name Started watcher with force refresh.
 * 0a40a20 Merge pull request #208 from notzippy/build_process_update
 * fcc1319 Fixing type
 * ea5acb7 Updated shared build environments Updated check for errors. Updated go.mod Added .vscode launch
@@ -160,12 +160,12 @@
 * 0920905 Updated to build go 1.12 and up Modified to use fsnotify directlyUpdated travis to not use go deps
 * 31cb64e Check-in of command_test, remaps the go mod command to use the develop branch.
 * 33abc47 Fixed remaining test
-* 86736d6 Updated formating Ran through testing individually for vendored Revel applications
+* 86736d6 Updated formatting Ran through testing individually for vendored Revel applications
 * 07d6784 Restructured command config Removed go/build reference in clean
 * c1aee24 Corrected version detection, so that equal versions match
 * f2b54f5 Updated sourceinfo Added packagepathmap to the SourceInfo, this in turn allows the RevelCLI app command to pass the source paths directly to Revel directly Added default to build to be "target" of the current folder Renamed source processor
 * 3f54665 Added processor to read the functions in the imported files, and populate the SourceInfo object the same as before
-* 548cbc1 Upatede Error type to SourceError Added processor object to code Verified compile errors appearing Signed-off-by: notzippy@gmail.com
+* 548cbc1 Updated Error type to SourceError Added processor object to code Verified compile errors appearing Signed-off-by: notzippy@gmail.com
 * 9a9511d Updated so revel new works and revel run starts parsing the source.
 * acb8fb6 Initial commit to go mod
 * d201463 Merge pull request #176 from xXLokerXx/fix_windows_path
@@ -173,11 +173,11 @@
 * ca4cfa5 Merge pull request #165 from kumakichi/fixed_import_C
 * 4368690 Merge pull request #179 from Laur1nMartins/Laur1nMartins/fix-linkerFlags
 * cf2e617 Merge branch 'develop' into Laur1nMartins/fix-linkerFlags
-* 424474a Fix linker flags inclusion in build comamnd
-* 6d8fcd9 Fix sintax error
+* 424474a Fix linker flags inclusion in build command
+* 6d8fcd9 Fix syntax error
 * aa459c1 Fix sintaxis error
 * 0b23b3e Fix complexity
-* 3f65e1e acept slash and inverted slash in src path validation
+* 3f65e1e accept slash and inverted slash in src path validation
 * 7dce3d8 fixed import "C"
 * 5c8d5bc develop v1.0.0-dev
 
@@ -262,7 +262,7 @@ revel.SimpleStack was moved to github.com/revel/revel/utils.SimpleStack
 
 ### Package changes
 #### Revel Framework 
-* Added stack to errors Added stack information to router when forumlating error
+* Added stack to errors Added stack information to router when formulating error
 * Fix spelling errors from go report
 * Removed deprecated loggers
 * Updated travis , made windows success optional
@@ -505,7 +505,7 @@ func (c WebSocket) RoomSocket(user string, ws revel.ServerWebSocket) revel.Resul
 * Added go 1.6 to testing
 * Adds the ability to set the language by a url parameter. The route file will need to specify the parameter so that it will be picked up
 * Changed url validation logic to regex
-* Added new validation mehtods (IPAddr,MacAddr,Domain,URL,PureText)
+* Added new validation methods (IPAddr,MacAddr,Domain,URL,PureText)
 
 [[revel/cmd](https://github.com/revel/cmd)]
 
@@ -928,7 +928,7 @@ Changes since v0.8:
 - [ENH] #496 - Type check renderArgs[CurrentLocalRenderArg]
 - [ENH] #490 - App.conf manual typo
 - [ENH] #487 - Make files executable on `revel build`
-- [ENH] #482 - Retain input values after form valdiation
+- [ENH] #482 - Retain input values after form validation
 - [ENH] #473 - OnAppStart documentation
 - [ENH] #466 - JSON error template quoting fix
 - [ENH] #464 - Remove unneeded trace statement
